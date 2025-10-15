@@ -478,3 +478,69 @@
     }
   }
 }
+
+//serve responsive
+
+@media (max-width: 1240px) {
+  .serve {
+    &__content {
+      position: relative;
+      z-index: 50;
+    }
+    img {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .serve {
+    &__content {
+      &-title {
+        font-size: 32px;
+      }
+      &-descr {
+        color: #333;
+        text-indent: 30px;
+      }
+      &-text {
+        text-indent: 30px;
+      }
+    }
+    img {
+      opacity: 0.4;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .serve {
+    &__content {
+      &-title {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+    img {
+      max-width: 90%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .serve {
+    padding-bottom: 0;
+    &__content {
+      &-title {
+        font-size: 22px;
+      }
+      &-text {
+        font-size: 16px;
+      }
+      &-descr {
+        font-size: 14px;
+      }
+    }
+  }
+}
