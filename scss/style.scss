@@ -111,3 +111,43 @@
     }
   }
 }
+
+// Who we serve section
+
+.serve {
+  padding: 110px 0 63px;
+  background-color: #E0F0DA4D;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    position: relative;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 805px;
+    &-title {
+      font-family: $font-bold;
+      font-size: 36px;
+      color: #333333;
+      margin-bottom: 30px;
+    }
+    &-text {
+      color: #586F5E;
+      font-size: 18px;
+      font-family: $font-medium;
+      margin-bottom: 40px;
+    }
+    &-descr {
+      color: #565656;
+      font-size: 18px;
+    }
+  }
+  &__image {
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: -170px;
+  }
+}
