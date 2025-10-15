@@ -151,3 +151,75 @@
     top: -170px;
   }
 }
+
+// eligibility section
+
+.eligibility {
+  padding: 90px 0 120px; 
+  .container {
+    max-width: 1200px;
+  }
+  &__head {
+    text-align: center;
+    margin-bottom: 40px;
+    &-title {
+      font-family: $font-bold;
+      font-size: 36px;
+      color: #333333;
+      margin-bottom: 40px;
+    }
+    &-text {
+      font-size: 18px;
+      font-family: $font-medium;
+      color: #757575;
+    }
+  }
+  &__questions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px 140px;
+    margin-bottom: 50px;
+  }
+  &__item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex: 0 0 auto;
+    img {
+      background-color: #3f644a;
+      border-radius: 8px;
+      width: 28px;
+      height: 28px;
+      max-width: 100%;
+    }
+    &-text {
+      font-family: $font-medium;
+      font-size: 18px;
+      line-height: 28px;
+      color: #4F4F4F;
+    }
+    &:last-child {
+      flex: 1 1 100%;
+    }
+  }
+  &__infotext {
+    color: #565656;
+    line-height: 26px;
+    max-width: 980px;
+    font-size: 18px;
+    p + p {
+      margin-top: 30px;
+    }
+    a {
+      font-size: 18px;
+      font-family: $font-medium;
+      transition: .3s ease;
+      display: inline-block;
+      &:hover {
+        transform: translateY(-2px);
+        text-decoration: underline;
+      }
+    }
+  }
+}
