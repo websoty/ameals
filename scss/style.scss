@@ -4,3 +4,110 @@
 @import 'global';
 @import 'header';
 @import 'footer';
+
+// qualify section
+
+.qualify {
+  padding: 130px 0 90px;
+  .container {
+    max-width: 1200px;
+  }
+  &__head {
+    text-align: center;
+    margin-bottom: 70px;
+    &-subtitle {
+      font-size: 18px;
+      color: #757575;
+      font-family: $font-medium;
+      margin-bottom: 35px;
+    }
+    &-title {
+      font-size: 36px;
+      font-family: $font-bold;
+      color: #333;
+    }
+  }
+  &__questions {
+    margin-bottom: 65px;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 27px;
+    img {
+      background-color: #3f644a;
+      border-radius: 8px;
+      width: 28px;
+      height: 28px;
+      max-width: 100%;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    color: #4F4F4F;
+    line-height: 28px;
+    font-family: $font-medium;
+  }
+  &__note {
+    margin-bottom: 60px;
+    p {
+      font-family: $font-medium;
+      font-size: 18px;
+      text-align: center;
+      color: #333333;
+    }
+    span {
+      display: block;
+    }
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  &__card {
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 520px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 32px 15px 30px 35px;
+    display: flex;
+    gap: 20px;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px 0;
+      a {
+        color: $color-green;
+        font-family: $font-medium;
+        text-decoration: underline;
+        display: inline-block;
+        transition: .3s ease;
+        &:hover {
+          transform: translateY(-2px);
+          text-decoration: none;
+        }
+      }
+    }
+    &-title {
+      font-family: $font-bold;
+      font-size: 18px;
+      color: #363333;
+      display: block;
+      max-width: 280px;
+    }
+    &-text {
+      color: #666666;
+      line-height: 24px;
+    }
+    &-img {
+      max-width: 100%;
+      margin-top: 25px;
+    }
+  }
+}
