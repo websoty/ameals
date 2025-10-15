@@ -223,3 +223,112 @@
     }
   }
 }
+
+// agewave section
+  .agewave {
+    padding-bottom: 100px;
+    &__head {
+      text-align: center;
+      margin-bottom: 60px;
+      &-title {
+        font-family: $font-bold;
+        font-size: 36px;
+        color: #333333;
+        margin-bottom: 40px;
+      }
+      &-text {
+        font-family: $font-medium;
+        font-size: 18px;
+        color: #757575;
+        margin-bottom: 35px;
+      }
+      &-info {
+        color: #565656;
+        font-size: 18px;
+        p + p {
+          margin-top: 20px;
+        }
+        a {
+      font-size: 18px;
+      font-family: $font-medium;
+      transition: .3s ease;
+      display: inline-block;
+      &:hover {
+        transform: translateY(-2px);
+        text-decoration: underline;
+      }
+    }
+      }
+    }
+    &__eligibility {
+      margin-bottom: 60px;
+      &-title {
+        font-size: 18px;
+        line-height: 28px;
+        color: #4F4F4F;
+        font-family: $font-medium;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px 0;
+      }
+      &-item {
+        color: #565656;
+        list-style-type: disc;
+      }
+    }
+    &__services {
+      &-title {
+        font-size: 18px;
+        line-height: 28px;
+        color: #4F4F4F;
+        font-family: $font-medium;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px 0;
+      }
+      &-item {
+        color: #565656;
+        list-style-type: disc;
+      }
+    }
+    &__items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      margin-bottom: 55px;
+    }
+    &__item {
+      text-align: center;
+    }
+    &__info {
+      text-align: center;
+      font-size: 18px;
+      font-family: $font-medium;
+      color: $color-descr;
+      a {
+      font-size: 18px;
+      font-family: $font-medium;
+      transition: .3s ease;
+      display: inline-block;
+      &:hover {
+        transform: translateY(-2px);
+        text-decoration: underline;
+      }
+    }
+    }
+  }
