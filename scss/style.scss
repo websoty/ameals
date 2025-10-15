@@ -544,3 +544,76 @@
     }
   }
 }
+
+//eligibility responsive
+
+@media (max-width: 1024px) {
+  .eligibility {
+    &__questions {
+      flex-direction: column;
+      gap: 40px 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .eligibility {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .eligibility {
+    padding-bottom: 60px;
+    &__head {
+      &-title {
+        font-size: 26px;
+      }
+      &-text {
+        font-size: 16px;
+      }
+    }
+    &__item {
+      &-text {
+        font-size: 16px;
+      }
+    }
+    &__infotext {
+      font-size: 16px;
+      a {
+        font-size: 16px;
+      }
+    } 
+    &__questions {
+      gap: 20px 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .eligibility {
+    &__head {
+      margin-bottom: 20px;
+      &-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+    }
+    &__questions {
+      gap: 10px;
+    }
+    &__infotext {
+      font-size: 14px;
+    }
+    &__item {
+      &:last-child img {
+        display: flex;
+        align-self: flex-start;
+      }
+    }
+  }
+}
