@@ -4,3 +4,140 @@
 @import 'global';
 @import 'header';
 @import 'footer';
+
+
+// welcome
+
+.welcome {
+  position: relative;
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+  }
+  &__sheaf {
+    position: absolute;
+    left: 0;
+    bottom: -290px;
+  }
+  &__inner {
+    margin: 230px auto 180px;
+    text-align: center;
+    max-width: 900px;
+  }
+  &__head {
+    margin-bottom: 40px;
+    position: relative;
+    img {
+      position: absolute;
+      left: -40px;
+      bottom: -60px;
+    }
+    &-title {
+      font-size: 48px;
+      line-height: 67px;
+      font-family: $font-bold;
+      color: #333;
+    }
+  }
+  &__text {
+    &-words {
+      font-size: 20px;
+      color: #626262;
+      & + & {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1680px) {
+  .welcome {
+    &__image {
+      z-index: 5;
+      opacity: 0.4;
+    }
+    &__inner {
+      position: relative;
+      z-index: 10;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .welcome__inner {
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    &__inner {
+      padding: 0 15px;
+    }
+    &__head {
+      &-title {
+        font-size: 36px;
+      }
+    }
+    &__text-words {
+      font-size: 18px;
+      text-align: justify;
+      text-indent: 30px;
+    }
+    &__sheaf {
+      max-width: 30%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome {
+    &__head {
+      margin-bottom: 15px;
+      &-title {
+        font-size: 28px;
+      }
+    }
+    &__image {
+      opacity: 0.3;
+    }
+    &__inner {
+      margin-top: 90px;
+    }
+    &__head {
+      img {
+        left: -100px;
+      }
+    }
+     &__text-words {
+      font-size: 18px;
+    }
+    &__sheaf {
+      bottom: -230px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome {
+    &__head {
+      img {
+        max-width: 50%;
+        left: -90px;
+        bottom: -40px;
+      }
+      &-title {
+        font-size: 24px;
+        line-height: 1.5;
+      }
+    }
+    &__text-words {
+      font-size: 16px;
+    }
+     &__sheaf {
+      bottom: -210px;
+    }
+  }
+}
