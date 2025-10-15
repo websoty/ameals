@@ -1,0 +1,17 @@
+@mixin button {
+  padding: 18px 42px;
+  font-family: $font-bold;
+  text-transform: uppercase;
+  background-color: #05581C;
+  color: #fff;
+  font-size: $font-small;
+  border-radius: 80px;
+  width: 200px;
+  border: none;
+  transition: transform .3s ease;
+  cursor: pointer;
+   &:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+   }
+}

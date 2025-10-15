@@ -1,0 +1,51 @@
+@import 'vars';
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-size: $font-small;
+  color: #626262;
+  font-weight: 400;
+  margin: 0;
+  font-family: $font-book;
+  line-height: 1.5;
+  background-color: #FAFAFA;
+}
+
