@@ -183,3 +183,55 @@ button {
     transform: scale(1.05);
   }
 }
+
+// responsive
+@media (max-width: 1024px) {
+  .modal__inner {
+    max-width: 750px;
+    padding: 35px 40px;
+  }
+
+  .modal__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal__inner {
+    padding: 30px;
+  }
+
+  .modal__title {
+    font-size: 28px;
+  }
+
+  .modal__form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 40px 10px;
+  }
+
+  .modal__inner {
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  .modal__title {
+    font-size: 24px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 15px;
+  }
+
+  button {
+    width: 100%;
+    max-width: none;
+  }
+}
