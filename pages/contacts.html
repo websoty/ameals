@@ -8,7 +8,224 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="#" class="header__logo-link">
+            <img src="/images/logo.png" alt="Free meals for Eligible Adults">
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__item-link">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__item-link">
+                About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="howitworks.html" class="nav__item-link">
+                How it Works</a>
+            </li>
+            <li class="nav__item">
+              <a href="menu.html" class="nav__item-link">
+                Menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="contacts.html" class="nav__item-link">
+                Contacts</a>
+            </li>
+            <li class="nav__item-btn-mobile"><button type="button" class="btn__started-mobile">GET STARTED</button>
+            </li>
+          </ul>
+          <button type="button" class="nav__btn-close"></button>
+        </nav>
+          <button type="button" class="burger__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <button type="button" class="btn__started">
+          GET STARTED
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <h1 class="contacts__title">
+          Contacts
+        </h1>
+        <div class="contacts__items">
+          <address>
+            <div class="contacts__item">
+              <img src="/images/map-loc.svg" alt="location icon">
+              <span>1733 Benbow Ct, Ste 3, Apopka, FL, 32703</span>
+            </div>
+          </address>
+            <div class="contacts__item">
+              <div class="contacts__item-phone">
+                <img src="/images/phone.svg" alt="phone">
+                <a href="tel:7866005909" class="footer__contacts-link">(786) 600-59-09</a>
+              </div>
+              <div class="contacts__item-mail">
+                <img src="/images/mail.svg" alt="mail">
+                <a href="mailto:Support@MealsAmericaFL.com">Support@MealsAmericaFL.com</a>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__item-time">
+                <img src="/images/time-drive.svg" alt="time">
+              </div>
+              <div class="contacts__item-worktime">
+                <p>Monday - Friday</p>
+                <p>9:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+        </div>
+
+      <div class="started">
+        <div class="started__head">
+          <h2 class="started__head-title">
+            Get started
+          </h2>
+          <p class="started__head-text">
+            Please complete the form below. 
+            Due to current high demand, we will do our best
+            to reply back to you within 48 business hours.
+          </p>
+        </div>
+        <form class="started__form" action="">
+          <div class="started__form-item">
+            <label for="name">Name <span>*</span></label>
+            <input type="text" id="name">
+
+            <label for="email">E-mail Address</label>
+            <input type="email" id="email">
+
+            <label for="country">Country <span>*</span></label>
+            <input type="text" id="country" required>
+          </div>
+          <div class="started__form-item">
+            <label for="organization">Organization</label>
+            <input type="text" id="organization">
+
+            <label for="city">City <span>*</span></label>
+            <input type="text" id="city" required>
+
+            <label for="zip-code">Zip Code <span>*</span></label>
+            <input type="text" id="zip-code" required>
+          </div>
+          <div class="started__form-item">
+            <label for="phone">Phone Number <span>*</span></label>
+            <input type="tel" id="phone" required>
+
+            <label for="state">State <span>*</span></label>
+            <input type="text" id="state" required>
+
+            <label class="needs" for="needs">Tell us about your needs<span>*</span>
+              <select name="needs" id="needs" required>
+                <option value="" disabled selected>
+                  —Please choose an option—
+                </option>
+                <option value="current_customer">
+                  I'm a current customer needing assistance
+                </option>
+                <option value="caregiver">
+                  I'm a caregiver or need meals for myself
+                </option>
+                <option value="case_manager">
+                  I'm a case manager needing meals for clients
+                </option>
+                <option value="healthcare">
+                  I represent a healthcare organization needing information for patients
+                </option>
+              </select>
+          </div>
+        </form>
+          <div class="started__form-comments">
+            <label for="comments">Provide any additional comments</label>
+            <textarea id="comments"></textarea>
+            <button class="btn__started" type="submit">submit</button>
+          </div>
+      </div>
+     </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logobox">
+          <img src="/images/logo.png" 
+          alt="Free meals for Eligible Adults">
+          <p class="footer__logobox-text">
+            All rights resereved <a class="footer__logobox-link" href="https://www.MealsAmericaFL.com">MealsAmericaFL.com</a> is based in the Florida area and provides home-delivered meals to consumers across ALL sixty seven counties in Florida.
+          </p>
+        </div>
+        <div class="footer__contacts">
+          <h5 class="footer__contacts-title">
+            Contact info
+            </h5>
+            <address>
+              <div class="footer__contacts-item">
+                <img src="/images/map-loc.svg" alt="location icon">
+                <span>1733 Benbow Ct, Ste 3, Apopka, FL, 32703</span>
+              </div>
+            <div class="footer__contacts-item">
+              <img src="/images/phone.svg" alt="phone">
+              <a href="tel:7866005909" class="footer__contacts-link">(786) 600-59-09</a>
+            </div>
+            <div class="footer__contacts-item">
+              <img src="/images/mail.svg" alt="mail">
+              <a href="mailto:Support@MealsAmericaFL.com">Support@MealsAmericaFL.com</a>
+            </div>
+            </address>
+        </div>
+        <div class="footer__nav">
+          <h5 class="footer__nav-title">
+            Links
+          </h5>
+          <nav class="footer__links">
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="about.html" class="footer__links-link">
+                  About Us
+                </a>
+              </li>
+              <li class="footer__links-item">
+                <a href="howitworks.html" class="footer__links-link">
+                  How it works
+                </a>
+              </li>
+              <li class="footer__links-item">
+                <a href="menu.html" class="footer__links-link">
+                  Our menu
+                </a>
+              </li>
+              <li class="footer__links-item">
+                <a href="contacts.html" class="footer__links-link">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© All rights resereved <a href="https://www.MealsAmericaFL.com">MealsAmericaFL.com</a></p>
+      </div>
+       <img src="/images/sheaf.png" class="footer__bottom-sheaf" alt="sheaf">
+    </div>
+  </footer>
   <script src="/js/main.js"></script>
 </body>
 </html>
