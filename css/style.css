@@ -537,6 +537,67 @@ body {
   }
 }
 
+.welcome {
+  position: relative;
+}
+
+.welcome__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 100%;
+}
+
+.welcome__sheaf {
+  position: absolute;
+  left: 0;
+  bottom: -290px;
+}
+
+.welcome__inner {
+  margin: 230px auto 180px;
+  text-align: center;
+  max-width: 900px;
+}
+
+.welcome__head {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.welcome__head img {
+  position: absolute;
+  left: -40px;
+  bottom: -60px;
+}
+
+.welcome__head-title {
+  font-size: 48px;
+  line-height: 67px;
+  font-family: "Stolzl-Bold";
+  color: #333;
+}
+
+.welcome__text-words {
+  font-size: 20px;
+  color: #626262;
+}
+
+.welcome__text-words + .welcome__text-words {
+  margin-top: 30px;
+}
+
+@media (max-width: 1680px) {
+  .welcome__image {
+    z-index: 5;
+    opacity: 0.4;
+  }
+  .welcome__inner {
+    position: relative;
+    z-index: 10;
+  }
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -1401,6 +1462,9 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .welcome__inner {
+    margin-top: 130px;
+  }
   .about {
     padding: 40px 0 30px 0;
   }
@@ -1425,22 +1489,81 @@ body {
 }
 
 @media (max-width: 768px) {
-  .about {
-    padding: 30px 0;
+  .welcome__inner {
+    padding: 0 15px;
   }
-  .about__cards {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-bottom: 100px;
+  .welcome__head-title {
+    font-size: 36px;
   }
-  .about__card {
-    max-width: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-    gap: 20px;
-    padding: 16px 16px;
+  .welcome__text-words {
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 30px;
   }
+  .welcome__sheaf {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome__head {
+    margin-bottom: 15px;
+  }
+  .welcome__head-title {
+    font-size: 28px;
+  }
+  .welcome__image {
+    opacity: 0.3;
+  }
+  .welcome__inner {
+    margin-top: 90px;
+  }
+  .welcome__head img {
+    left: -100px;
+  }
+  .welcome__text-words {
+    font-size: 18px;
+  }
+  .welcome__sheaf {
+    bottom: -230px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome__head img {
+    max-width: 50%;
+    left: -90px;
+    bottom: -40px;
+  }
+  .welcome__head-title {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .welcome__text-words {
+    font-size: 16px;
+  }
+  .welcome__sheaf {
+    bottom: -210px;
+  }
+}
+
+.about {
+  padding: 30px 0;
+}
+
+.about__cards {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.about__card {
+  max-width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  gap: 20px;
+  padding: 16px 16px;
 }
 
 @media (max-width: 600px) {
