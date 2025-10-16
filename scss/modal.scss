@@ -133,6 +133,7 @@
 .comments {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 
   label {
     margin-bottom: 12px;
@@ -160,24 +161,8 @@
   }
 }
 
-button {
-  font-size: $font-small;
-  font-family: $font-bold;
-  padding: 18px 42px;
-  background-color: #05581C;
-  color: #fff;
-  text-transform: uppercase;
-  border-radius: 80px;
-  cursor: pointer;
-  max-width: 200px;
-  width: 100%;
-  margin-top: 30px;
-  transition: all 0.3s ease;
-
-  &:hover {
-    opacity: 0.9;
-    transform: scale(1.05);
-  }
+.btn__submit {
+  @include button;
 }
 
 // responsive
@@ -226,7 +211,7 @@ button {
     font-size: 15px;
   }
 
-  button {
+  .btn__submit {
     width: 100%;
     max-width: none;
   }

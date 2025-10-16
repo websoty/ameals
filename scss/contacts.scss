@@ -149,6 +149,10 @@
   flex-direction: column;
 }
 
+.btn__submit {
+  @include button;
+}
+
 // responsive 
 @media (max-width: 1024px) {
   .contacts {

@@ -9,6 +9,9 @@
     top: 0;
     right: 0;
     max-width: 100%;
+    &.static {
+      position: static;
+    }
   }
   &__sheaf {
     position: absolute;
