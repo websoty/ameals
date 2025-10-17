@@ -67,14 +67,20 @@
   }
   &__form {
     margin-bottom: 65px;
-    display: flex;
-    justify-content: space-between;
-    gap: 35px;
+    flex-direction: column;
+    gap: 35px;    
+    &-items {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
     &-item {
       display: flex;
       flex: 1 1 100%;
       flex-direction: column;
       gap: 20px;
+      justify-content: space-between;
     }
     label {
      font-size: 15px;
@@ -144,10 +150,6 @@
     }
  }
 }
-.needs {
-  display: flex;
-  flex-direction: column;
-}
 
 .btn__submit {
   @include button;
@@ -180,9 +182,12 @@
 
 @media (max-width:930px) {
   .started {
-    &__form {
+    &__form-items {
       flex-wrap: wrap;
     }
+  }
+  .needs {
+    max-width: 100%;
   }
 }
 
