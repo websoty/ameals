@@ -1,0 +1,617 @@
+@import 'style';
+
+
+.meals {
+  padding-bottom: 150px;
+  &__menu {
+    background-color: #bacdd712;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .container {
+    max-width: 1640px;
+  }
+  &__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    img {
+      width: 200px;
+      height: auto;
+      max-width: 100%;
+    }
+    h1 {
+      color: #ed3434;
+      font-size: 40px;
+      font-family: $font-accent;
+      letter-spacing: 5px;
+    }
+    p {
+      color: $color-green;
+      font-size: 34px;
+      font-family: $font-accent;
+      text-transform: capitalize;
+    }
+  }
+  &__weeks {
+    position: relative;
+    &-back {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.3;
+      max-width: 100%;
+    }
+  }
+}
+
+.topmeals {
+  padding-top: 30px;
+  &__inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+  &__left {
+    max-width: 150px;
+    span {
+      writing-mode: sideways-lr;
+      font-size: 140px;
+      font-family: $font-bold;
+      color: #7c6d75cc;
+      text-wrap: nowrap;
+    }
+  }
+  &__right {
+    max-width: 200px;
+    &-images {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    img {
+      max-width: 100%;
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    &-contacts {
+      color: #7c6d75cc;
+      writing-mode: sideways-lr;
+      text-orientation: upright;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 700;
+      }
+    }
+    &-links {
+      font-size: 35px;
+      display: flex;
+      justify-content: space-between;
+      a {
+        transition: .3s ease;
+        &:hover {
+          transform: scale(1.1);
+          color: $color-green;
+        }
+      }
+    }
+    &-item {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      img {
+        width: 50px;
+        height: auto;
+        max-width: 100%;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 1600px;
+    max-width: 100%;
+    height: 20px;
+    background-color: #fff;
+  }
+}
+
+.weeks,
+.weeks__bot {
+  &__col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  display: flex;
+  justify-content: center;
+  gap: 0 100px;
+}
+
+.col__title {
+   color: #ed3434;
+   font-size: 32px;
+   text-align: center;
+   margin-bottom: 15px;
+   font-weight: 500;
+   font-family: fantasy;
+}
+
+.weeks {
+  margin-bottom: 20px;
+}
+
+.dish {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 305px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: $font-accent;
+    color: #239737;
+  }
+  &__descr {
+    color: #333;
+    max-width: 270px;
+  }
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: #000;
+    width: 100px;
+    max-width: 100%;
+    &-price {
+      font-family: cursive;
+      color: #456825;
+    }
+  }
+}
+
+.botmeals {
+  &__head {
+    position: relative;
+    &-descr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      flex-direction: column;
+      margin-bottom: 30px;
+      h1 {
+        color: #ed3434;
+        font-size: 40px;
+        font-family: $font-accent;
+        letter-spacing: 5px;
+      }
+      p {
+        color: $color-green;
+        font-size: 34px;
+        font-family: $font-accent;
+        text-transform: capitalize;
+      }
+      img {
+        max-width: 100%;
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+  &__col {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    &.salads {
+      h3 {
+        color:#0b781ecf;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &__list {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+.head__image {
+  position: absolute;
+  width: 550px;
+  max-width: 100%;
+  top: 20px;
+  right: 0;
+  height: auto;
+}
+
+.instructions {
+  padding-bottom: 150px;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+  }
+  &__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #333;
+    font-family: $font-medium;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    font-size: 22px;
+    color: #757575;
+    font-family: $font-medium;
+    margin-bottom: 30px;
+  }
+  &__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+  }
+  &__card {
+    max-width: 500px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+    &-title {
+       font-family: $font-bold;
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    &-text {
+      line-height: 24px;
+    }
+  }
+  &__notice {
+    font-size: 22px; 
+    font-family: $font-medium;
+    color: #333;
+    text-align: center;
+  }
+}
+
+// responsive
+
+@media (max-width:1440px) {
+  .topmeals {
+    &__left {
+      span {
+        font-size: 110px;
+      }
+    }
+    &__right-contacts {
+      align-self: flex-end;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .head__image {
+    width: 450px;
+  }
+  .topmeals {
+    &__left {
+      max-width: 100px;
+      span {
+        font-size: 60px;
+      }
+    }
+    &__right {
+      &-contacts {
+        span {
+          font-size: 40px;
+        }
+      }
+      &-links {
+        font-size: 24px;
+      }
+    }
+  }
+  .instructions {
+    &__title {
+      font-size: 28px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      text-align: center;
+    }
+    &__notice {
+      font-size: 20px;
+    }
+    &__cards {
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 868px) {
+  .head__image {
+    width: 410px;
+  }
+  .meals {
+    &__head {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+  .weeks,
+  .weeks__bot {
+    gap: 0 30px;
+  }
+  .col__title {
+    font-size: 26px;
+  }
+    .topmeals {
+    &__left {
+      span {
+        font-size: 40px;
+      }
+    }
+    &__right {
+      &-images {
+        display: none;
+      }
+      &-contacts {
+        flex-direction: row;
+        span {
+          font-size: 22px;
+        }
+      }
+      &-links {
+        font-size: 20px;
+        margin-top: 50px;
+        gap: 30px;
+      }
+      &-item {
+        img {
+          width: 25px;
+        }
+      }
+    }
+  }
+  .dish {
+    &__title {
+      font-size: 18px;
+    }
+  }
+  .botmeals {
+    &__col {
+      flex: 0 0 48%;
+    }
+    &__head-descr {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 24px;
+      }
+   }
+ }
+ .instructions__cards {
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+}
+
+@media (max-width: 768px) {
+  .topmeals {
+    &__left {
+      span {
+        font-size: 30px;
+      }
+    }
+    &__right {
+      &-contacts {
+      span {
+        font-size: 18px;
+      }
+      &-links {
+        font-size: 16px;
+      }        
+     }
+     &-item {
+      img {
+        width: 18px;
+      }
+     }
+    }
+  }
+  .meals {
+    &__head {
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 20px;
+      }
+      img {
+        width: 150px;
+      }
+    }
+  }
+  .col__title {
+    font-size: 20px;
+  }
+  .weeks,
+  .weeks__bot {
+    flex-direction: column;
+  }
+  .head__image {
+    width: 320px;
+  }
+
+.botmeals {
+  &__head {
+    &-descr {
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 20px;
+      }
+      img {
+        width: 150px;
+      }
+    }
+  }
+  &__list {
+    flex-direction: column;
+  }
+  &__col {
+    &.salads {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+  .instructions {
+    &__title {
+      font-size: 24px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__notice {
+      font-size: 18px;
+    }
+    &__cards {
+      gap: 10px;
+    }
+    &__card {
+      padding: 15px;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .meals,
+  .instructions {
+    padding-bottom: 50px;
+  }
+  .head__image {
+    width: 240px;
+  }
+  .topmeals {
+    &__left {
+      span {
+        font-size: 18px;
+      }
+    }
+    &__right {
+      // display: none;
+    }
+  }
+    .instructions {
+    &__title {
+      font-size: 20px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__notice {
+      font-size: 16px;
+    }
+  }
+  .weeks,
+  .botmeals {
+    &__col {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .meals {
+    &__head {
+      h1 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+        text-align: center;
+      }
+      img {
+        width: 120px;
+      }
+    }
+  }
+  .botmeals__head {
+    &-descr {
+      h1 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+        text-align: center;
+      }
+      img {
+        width: 120px;
+      }
+    }
+  }
+  .head__image {
+    display: none;
+  }
+  .dish {
+    gap: 5px;
+    &__title {
+      font-size: 16px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+    }
+  .instructions {
+    &__title {
+      font-size: 18px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+    &__notice {
+      font-size: 14px;
+    }
+    &__card {
+      &-title {
+        font-size: 15px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+    }
+  }
+  }

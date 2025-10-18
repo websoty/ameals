@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-  <script src="/js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Started</title>
+    <base href="/ameals/">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal__head">
+          <h3 class="modal__title">Get Started</h3>
+          <img
+            src="images/close.svg"
+            class="modal__close"
+            alt="button close"
+          />
+        </div>
+        <form action="" class="modal__form" novalidate>
+          <div class="modal__form-left">
+            <label for="name">Name <span>*</span></label>
+            <input type="text" name="name" id="name" required />
+
+            <label for="email">E-mail Address</label>
+            <input type="email" name="email" id="email" />
+
+            <label for="country">Country <span>*</span></label>
+            <input type="text" name="country" id="country" required />
+
+            <label for="phone">Phone Number <span>*</span></label>
+            <input type="tel" name="phone" id="phone" required />
+          </div>
+          <div class="modal__form-right">
+            <label for="organization">Organization</label>
+            <input type="text" id="organization" />
+
+            <label for="city">City <span>*</span></label>
+            <input type="text" name="city" id="city" required />
+
+            <label for="zip-code">Zip Code <span>*</span></label>
+            <input type="text" name="zip" id="zip-code" required />
+
+            <label for="state">State <span>*</span></label>
+            <input type="text" name="state" id="state" required />
+          </div>
+
+          <div class="needs">
+            <label for="needs">Tell us about your needs <span>*</span></label>
+            <select name="needs" id="needs" required>
+              <option value="" disabled selected>—Please choose an option—</option>
+              <option value="current_customer">I'm a current customer needing assistance</option>
+              <option value="caregiver">I'm a caregiver or need meals for myself</option>
+              <option value="case_manager">I'm a case manager needing meals for clients</option>
+              <option value="healthcare">I represent a healthcare organization needing information for patients</option>
+            </select>
+          </div>
+
+          <div class="comments">
+            <label for="comments">Provide any additional comments</label>
+            <textarea id="comments"></textarea>
+          </div>
+
+          <button class="btn__submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
