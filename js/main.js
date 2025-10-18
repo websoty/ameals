@@ -1,5 +1,5 @@
 // подгрузка модалки по файлам
-fetch('/pages/modal.html')
+fetch('..pages/modal.html')
 .then(res => {
     if (!res.ok) throw new Error('Ошибка при загрузке модалки');
     return res.text();
