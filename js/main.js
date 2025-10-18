@@ -1,7 +1,5 @@
 // подгрузка модалки по файлам
-const modalPath = location.pathname.endsWith('/') || location.pathname.endsWith('index.html')
-    ? './pages/modal.html'  // если index.html — берём из pages
-    : './modal.html';       // если любая страница из pages — берём modal.html из той же папки
+const modalPath = 'pages/modal.html'; // путь от base
 
 
 fetch(modalPath)
