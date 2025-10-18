@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/modal.css" />
+    <title>Get Started</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
   </head>
   <body>
     <div class="modal">
@@ -14,7 +14,7 @@
         <div class="modal__head">
           <h3 class="modal__title">Get Started</h3>
           <img
-            src="/images/close.svg"
+            src="../images/close.svg"
             class="modal__close"
             alt="button close"
           />
@@ -48,27 +48,13 @@
           </div>
 
           <div class="needs">
-            <label for="needs"
-              >Tell us about your needs
-              <span>*</span>
-            </label>
+            <label for="needs">Tell us about your needs <span>*</span></label>
             <select name="needs" id="needs" required>
-              <option value="" disabled selected>
-                —Please choose an option—
-              </option>
-              <option value="current_customer">
-                I'm a current customer needing assistance
-              </option>
-              <option value="caregiver">
-                I'm a caregiver or need meals for myself
-              </option>
-              <option value="case_manager">
-                I'm a case manager needing meals for clients
-              </option>
-              <option value="healthcare">
-                I represent a healthcare organization needing information for
-                patients
-              </option>
+              <option value="" disabled selected>—Please choose an option—</option>
+              <option value="current_customer">I'm a current customer needing assistance</option>
+              <option value="caregiver">I'm a caregiver or need meals for myself</option>
+              <option value="case_manager">I'm a case manager needing meals for clients</option>
+              <option value="healthcare">I represent a healthcare organization needing information for patients</option>
             </select>
           </div>
 
@@ -76,10 +62,12 @@
             <label for="comments">Provide any additional comments</label>
             <textarea id="comments"></textarea>
           </div>
-            <button class="btn__submit" type="submit">submit</button>
+
+          <button class="btn__submit" type="submit">Submit</button>
         </form>
       </div>
     </div>
-    <script src="/js/main.js" defer></script>
+
+    <script src="../js/main.js" defer></script>
   </body>
 </html>
