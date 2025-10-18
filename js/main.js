@@ -1,11 +1,12 @@
 // подгрузка модалки по файлам
-const modalPath = location.pathname.endsWith('index.html') || location.pathname === '/ameals/' || location.pathname === '/'
+const modalPath = location.pathname.endsWith('/') || location.pathname.endsWith('index.html')
     ? './pages/modal.html'  // если index.html — берём из pages
     : './modal.html';       // если любая страница из pages — берём modal.html из той же папки
 
 
 fetch(modalPath)
 .then(res => {
+    console.log('Загружаю модалку из:', modalPath);
     if (!res.ok) throw new Error('Ошибка при загрузке модалки');
     return res.text();
 })
