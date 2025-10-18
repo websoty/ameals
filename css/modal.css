@@ -248,6 +248,7 @@ body {
         -ms-flex-order: 2;
             order: 2;
     width: 36px;
+    background-color: transparent;
     height: 26px;
     display: -webkit-box;
     display: -ms-flexbox;
