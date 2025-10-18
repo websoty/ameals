@@ -543,6 +543,72 @@ body {
   }
 }
 
+.send {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 9999;
+}
+
+.send.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.send .successMsg {
+  background: #fff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: opacity .3s ease, -webkit-transform .3s ease;
+  transition: opacity .3s ease, -webkit-transform .3s ease;
+  transition: transform .3s ease, opacity .3s ease;
+  transition: transform .3s ease, opacity .3s ease, -webkit-transform .3s ease;
+}
+
+.send .successMsg p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.send .successMsg .successMsg__close {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+}
+
+.send .successMsg .successMsg__close:hover {
+  background: #43a047;
+}
+
+.send.active .successMsg {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .hero {
   position: relative;
   overflow: hidden;

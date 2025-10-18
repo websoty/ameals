@@ -38,7 +38,7 @@ function validation() {
 
         form.addEventListener('submit', e => {
             e.preventDefault();
-            let formValid = true;
+            let formValid = true; // отслежка формы валидации
 
             requiredInputs.forEach(input => {
                 const val = input.value.trim();
@@ -55,15 +55,36 @@ function validation() {
                 } else if (input.tagName === 'SELECT') {
                     valid = val !== '';
                 }
+                
 
-                if (!valid) formValid = false;
+                if (!valid) {
+                   formValid = false; 
+                    input.style.border = '1px solid red';
+                } else {
+                    input.style.border = '';
+                }
             });
+            if (formValid) {
 
-            if (formValid) form.submit();
-            else console.log('Форма не валидна!');
+            const successMsg = document.createElement('div');
+            successMsg.classList.add('send');
+            successMsg.innerHTML = `
+                <div class="successMsg">
+                <p>Thank you! Your form has been submitted! 🎉</p>
+                <button class="successMsg__close">Close</button>
+                </div>
+            `;
+            document.body.appendChild(successMsg);
+            setTimeout(() => successMsg.classList.add('active'), 100);
+            
+            successMsg.querySelector('.successMsg__close').addEventListener('click', () => successMsg.remove());
+            form.reset();
+            } 
         });
     });
 }
+
+
 
 // Бургер меню
 const menuBtn = document.querySelector('.burger__menu');
